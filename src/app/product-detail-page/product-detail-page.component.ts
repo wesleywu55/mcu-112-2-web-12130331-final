@@ -17,13 +17,13 @@ export class ProductDetailPageComponent implements OnInit {
 
   product!: Product;
 
+  private router = inject(Router);
+
   private productService = inject(ProductService);
 
   ngOnInit(): void {
-    this.product = this.productService.getById(this.id);
+    this.productService.getById(this.id).subscribe((product) => (this.product = product));
   }
-
-  private router = inject(Router);
 
   onEdit(): void {
     this.router.navigate(['product', 'form', this.product.id]);
