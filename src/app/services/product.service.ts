@@ -10,7 +10,7 @@ export class ProductService {
     new Product({
       id: 1,
       name: 'A 產品',
-      authors: ['作者甲', '作者乙', '作者丙'],
+      authors: ['作者A', '作者B', '作者C'],
       company: '博碩文化',
       isShow: true,
       imgUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
@@ -19,7 +19,7 @@ export class ProductService {
     new Product({
       id: 2,
       name: 'B 產品',
-      authors: ['作者甲', '作者乙', '作者丙'],
+      authors: ['作者A', '作者B', '作者C'],
       company: '博碩文化',
       isShow: true,
       imgUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
@@ -28,7 +28,7 @@ export class ProductService {
     new Product({
       id: 3,
       name: 'C 產品',
-      authors: ['作者甲', '作者乙', '作者丙'],
+      authors: ['作者A', '作者B', '作者C'],
       company: '博碩文化',
       isShow: true,
       imgUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
@@ -37,7 +37,7 @@ export class ProductService {
     new Product({
       id: 4,
       name: 'D 產品',
-      authors: ['作者甲', '作者乙', '作者丙'],
+      authors: ['作者A', '作者B', '作者C'],
       company: '博碩文化',
       isShow: true,
       imgUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
@@ -46,7 +46,7 @@ export class ProductService {
     new Product({
       id: 4,
       name: 'E 產品',
-      authors: ['作者甲', '作者乙', '作者丙'],
+      authors: ['作者A', '作者B', '作者C'],
       company: '博碩文化',
       isShow: true,
       imgUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
