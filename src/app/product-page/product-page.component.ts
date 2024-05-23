@@ -32,7 +32,7 @@ export class ProductPageComponent {
       company: '博碩文化',
       isShow: true,
       imgUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
-      price: 10000,
+      price: 1580,
     });
     this.productService.add(product).subscribe(() => this.refresh$.next());
   }
