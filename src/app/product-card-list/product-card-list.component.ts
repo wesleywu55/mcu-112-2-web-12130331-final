@@ -17,8 +17,5 @@ export class ProductCardListComponent {
   edit = new EventEmitter<Product>();
 
   @Output()
-  remove = new EventEmitter<Product>();
-
-  @Output()
   view = new EventEmitter<Product>();
 }

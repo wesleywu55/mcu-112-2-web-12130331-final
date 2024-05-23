@@ -37,14 +37,6 @@ export class ProductPageComponent {
     this.productService.add(product).subscribe(() => this.refresh$.next());
   }
 
-  onEdit(product: Product): void {
-    this.router.navigate(['product', 'form', product.id]);
-  }
-
-  onRemove({ id }: Product): void {
-    this.productService.remove(id).subscribe(() => this.refresh$.next());
-  }
-
   onView(product: Product): void {
     this.router.navigate(['product', 'view', product.id]);
   }

@@ -45,12 +45,7 @@ div.button button {
   cursor: pointer;
 }
 
-button.edit {
+button.add_to_the_cart {
   background-color: #007bff;
-  color: white;
-}
-
-button.remove {
-  background-color: #ba1a1a;
   color: white;
 }

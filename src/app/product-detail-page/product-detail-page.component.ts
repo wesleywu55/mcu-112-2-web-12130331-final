@@ -19,14 +19,6 @@ export class ProductDetailPageComponent {
 
   private productService = inject(ProductService);
 
-  onEdit(): void {
-    this.router.navigate(['product', 'form', this.product.id]);
-  }
-
-  onRemove(): void {
-    this.productService.remove(this.product.id).subscribe(() => this.router.navigate(['products']));
-  }
-
   onBack(): void {
     this.router.navigate(['products']);
   }

@@ -69,17 +69,4 @@ export class ProductService {
     this._data = [...this._data, newProduct];
     return of(newProduct);
   }
-
-  update(product: Product): Observable<Product> {
-    const index = this._data.findIndex(({ id }) => product.id === id);
-    const newProduct = new Product({ ...product });
-    this._data[index] = newProduct;
-    return of(newProduct);
-  }
-
-  remove(productId: number): Observable<Product> {
-    const product = this._data.find(({ id }) => productId === id)!;
-    this._data = [...this._data.filter(({ id }) => productId !== id)];
-    return of(product);
-  }
 }
