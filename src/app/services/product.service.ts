@@ -14,7 +14,6 @@ export class ProductService {
       company: '博碩文化',
       isShow: true,
       imgUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
-      createDate: new Date(),
       price: 10000,
     }),
     new Product({
@@ -24,7 +23,6 @@ export class ProductService {
       company: '博碩文化',
       isShow: true,
       imgUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
-      createDate: new Date(),
       price: 10000,
     }),
     new Product({
@@ -34,7 +32,6 @@ export class ProductService {
       company: '博碩文化',
       isShow: true,
       imgUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
-      createDate: new Date(),
       price: 10000,
     }),
     new Product({
@@ -44,7 +41,6 @@ export class ProductService {
       company: '博碩文化',
       isShow: true,
       imgUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
-      createDate: new Date(),
       price: 10000,
     }),
   ];

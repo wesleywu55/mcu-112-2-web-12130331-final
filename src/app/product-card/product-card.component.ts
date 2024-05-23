@@ -18,7 +18,6 @@ export class ProductCardComponent {
   @Input({ transform: booleanAttribute })
   isShow!: boolean;
 
-  @Input() createDate!: Date;
   @Input({ transform: numberAttribute }) price!: number;
 
   @HostBinding('class')
