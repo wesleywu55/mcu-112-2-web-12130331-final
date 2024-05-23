@@ -9,7 +9,7 @@ export class ProductService {
   private _data = [
     new Product({
       id: 1,
-      name: '書籍 A',
+      name: 'A 產品',
       authors: ['作者甲', '作者乙', '作者丙'],
       company: '博碩文化',
       isShow: true,
@@ -18,7 +18,7 @@ export class ProductService {
     }),
     new Product({
       id: 2,
-      name: '書籍 B',
+      name: 'B 產品',
       authors: ['作者甲', '作者乙', '作者丙'],
       company: '博碩文化',
       isShow: true,
@@ -27,7 +27,7 @@ export class ProductService {
     }),
     new Product({
       id: 3,
-      name: '書籍 C',
+      name: 'C 產品',
       authors: ['作者甲', '作者乙', '作者丙'],
       company: '博碩文化',
       isShow: true,
@@ -36,7 +36,16 @@ export class ProductService {
     }),
     new Product({
       id: 4,
-      name: '書籍 D',
+      name: 'D 產品',
+      authors: ['作者甲', '作者乙', '作者丙'],
+      company: '博碩文化',
+      isShow: true,
+      imgUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
+      price: 1580,
+    }),
+    new Product({
+      id: 4,
+      name: 'E 產品',
       authors: ['作者甲', '作者乙', '作者丙'],
       company: '博碩文化',
       isShow: true,
