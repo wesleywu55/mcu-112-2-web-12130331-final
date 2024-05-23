@@ -62,11 +62,4 @@ export class ProductService {
   getList(): Observable<Product[]> {
     return of(this._data);
   }
-
-  add(product: Product): Observable<Product> {
-    const id = this._data.length === 0 ? 1 : Math.max(...this._data.map(({ id }) => id)) + 1;
-    const newProduct = new Product({ ...product, id });
-    this._data = [...this._data, newProduct];
-    return of(newProduct);
-  }
 }
