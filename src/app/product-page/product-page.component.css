@@ -2,3 +2,26 @@
   display: block;
   padding: 10px;
 }
+
+.toolbar {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+input[type='text'] {
+  margin-right: 10px;
+  padding: 5px;
+  width: 350px;
+  height: 30px;
+  font-size: 20px;
+  border: solid 1px #007bff;
+}
+
+button {
+  padding: 10px 10px;
+  border: solid 1px #007bff;
+  color: #007bff;
+  background-color: white;
+  cursor: pointer;
+}
