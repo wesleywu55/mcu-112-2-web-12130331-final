@@ -59,6 +59,10 @@ export class ProductService {
     return of(product);
   }
 
+  getCount(name?: string): Observable<number> {
+    throw new Error('NO');
+  }
+
   getList(name: string | undefined, pageIndex: number, pageSize: number): Observable<Product[]> {
     return of(this._data);
   }
