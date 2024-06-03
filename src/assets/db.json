@@ -69,6 +69,76 @@
       "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
       "createDate": "2023-10-17T00:00:00.000+08:00",
       "price": 1580
+    },
+    {
+      "id": 6,
+      "name": "F 產品",
+      "authors": [
+        "作者A",
+        "作者B",
+        "作者C"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2023-10-17T00:00:00.000+08:00",
+      "price": 1580
+    },
+    {
+      "id": 7,
+      "name": "G 產品",
+      "authors": [
+        "作者A",
+        "作者B",
+        "作者C"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2023-10-17T00:00:00.000+08:00",
+      "price": 1580
+    },
+    {
+      "id": 8,
+      "name": "H 產品",
+      "authors": [
+        "作者A",
+        "作者B",
+        "作者C"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2023-10-17T00:00:00.000+08:00",
+      "price": 1580
+    },
+    {
+      "id": 9,
+      "name": "I 產品",
+      "authors": [
+        "作者A",
+        "作者B",
+        "作者C"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2023-10-17T00:00:00.000+08:00",
+      "price": 1580
+    },
+    {
+      "id": 10,
+      "name": "J 產品",
+      "authors": [
+        "作者A",
+        "作者B",
+        "作者C"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2023-10-17T00:00:00.000+08:00",
+      "price": 1580
     }
   ]
 }
