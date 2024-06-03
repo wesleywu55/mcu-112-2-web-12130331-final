@@ -1,7 +1,7 @@
 <div class="toolbar">
   <span>
     <input type="text" placeholder="產品名稱查詢" [formControl]="formControl" />
-    <button type="button">查詢</button>
+    <button type="button" (click)="condition = formControl.value">查詢</button>
   </span>
 </div>
 <app-product-card-list
