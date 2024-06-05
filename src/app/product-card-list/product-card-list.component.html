@@ -1,6 +1,7 @@
 <div class="container">
   @for (product of products; track product.id) {
   <app-product-card
+    [id]="product.id"
     [productName]="product.name"
     [authors]="product.authors"
     [company]="product.company"
