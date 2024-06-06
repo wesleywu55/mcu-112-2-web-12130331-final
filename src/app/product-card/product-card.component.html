@@ -1,7 +1,13 @@
 <img [src]="imgUrl" />
+@if(id==1) {
+<div class="content" style="color: red">
+  <strong [class.notShow]="!isShow"> {{ productName }} </strong>
+</div>
+} @else {
 <div class="content">
   <strong [class.notShow]="!isShow"> {{ productName }} </strong>
 </div>
+}
 <div>
   @for (author of authors; track author) {
   <span>{{ author }}</span>
