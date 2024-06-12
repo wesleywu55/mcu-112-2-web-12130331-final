@@ -1,5 +1,5 @@
 <div class="container">
-  @for (product of products; track product.id) {
+  @for (product of products; track product.id) { @if (product.isShow) {
   <app-product-card
     [id]="product.id"
     [productName]="product.name"
@@ -11,9 +11,7 @@
     (view)="view.emit(product)"
     (addToCart)="addToCart.emit(product)"
   ></app-product-card>
-  } @empty {
-  <div class="data-empty">無產品資料</div>
-  }
+  }}
 </div>
 <app-pagination
   [totalCount]="totalCount"
