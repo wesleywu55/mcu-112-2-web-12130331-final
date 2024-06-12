@@ -9,6 +9,7 @@
     [imgUrl]="product.imgUrl"
     [price]="product.price"
     (view)="view.emit(product)"
+    (addToCart)="addToCart.emit(product)"
   ></app-product-card>
   } @empty {
   <div class="data-empty">無產品資料</div>

@@ -30,5 +30,8 @@ export class ProductCardListComponent {
   edit = new EventEmitter<Product>();
 
   @Output()
+  addToCart = new EventEmitter<Product>();
+
+  @Output()
   view = new EventEmitter<Product>();
 }
