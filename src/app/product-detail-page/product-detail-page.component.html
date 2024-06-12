@@ -15,18 +15,10 @@
     <strong>公司</strong>
     <span>{{ product.company }}</span>
   </div>
-  @if(product.name=="A 產品" ) {
-  <div>
-    <strong>價格</strong>
-    <span>{{ product.price | currency }}</span>
-    <strong style="color: red">特價</strong>
-  </div>
-  } @else {
   <div>
     <strong>價格</strong>
     <span>{{ product.price | currency }}</span>
   </div>
-  }
   <div class="button">
     <button type="button" (click)="onBack()">返回</button>
     <span>
