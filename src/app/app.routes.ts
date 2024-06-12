@@ -3,7 +3,7 @@ import { ProductDetailPageComponent } from './product-detail-page/product-detail
 import { ProductFormPageComponent } from './product-form-page/product-form-page.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { productResolver } from './resolver/product.resolver';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ShoppingCartComponent } from './shopping-cart-page/shopping-cart-page.component';
 
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'products' },
