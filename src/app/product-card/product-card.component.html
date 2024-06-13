@@ -1,6 +1,6 @@
 <img [src]="imgUrl" />
 <div class="content">
-  <strong [class.notShow]="!isShow"> {{ productName }} </strong>
+  <strong [class.discount]="hasDiscount">{{ productName }}</strong>
 </div>
 <div>
   @for (author of authors; track author) {

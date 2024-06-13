@@ -7,6 +7,10 @@
   gap: 10px;
 }
 
+strong.discount {
+  color: red;
+}
+
 div.content,
 div.company,
 div.button {

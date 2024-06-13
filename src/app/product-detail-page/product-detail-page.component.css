@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+strong.discount {
+  color: red;
+}
+
 img {
   flex: 0 0 300px;
 }

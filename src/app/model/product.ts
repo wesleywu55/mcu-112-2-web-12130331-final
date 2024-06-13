@@ -13,6 +13,8 @@ export class Product {
 
   isShow!: boolean;
 
+  hasDiscount!: boolean;
+
   imgUrl!: string;
 
   price!: number;
