@@ -17,4 +17,15 @@ export class ShoppingCartService {
       this.data.push(new ShoppingItem({ id, product, count: 1 }));
     }
   }
+
+  deleteProduct(id: number): void {
+    const index = this.data.findIndex((x) => x.id === id);
+    if (index !== -1) {
+      this.data.splice(index, 1);
+    }
+  }
+
+  clear(): void {
+    this.data = [];
+  }
 }
