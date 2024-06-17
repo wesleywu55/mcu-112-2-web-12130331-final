@@ -1,4 +1,4 @@
-import { CurrencyPipe, JsonPipe } from '@angular/common';
+import { CurrencyPipe } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
 import { FormArray, FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { IOrderDetailForm } from '../interface/order-detail-form.interface';
@@ -9,12 +9,12 @@ import { ShoppingCartService } from '../services/shopping-cart.service';
 @Component({
   selector: 'app-shopping-cart',
   standalone: true,
-  imports: [JsonPipe, CurrencyPipe, ReactiveFormsModule],
+  imports: [CurrencyPipe, ReactiveFormsModule],
   templateUrl: './shopping-cart-page.component.html',
   styleUrl: './shopping-cart-page.component.css',
 })
 export class ShoppingCartComponent implements OnInit {
-  readonly ShoppingCartService = inject(ShoppingCartService);
+  readonly shoppingCartService = inject(ShoppingCartService);
 
   readonly form = new FormGroup<IOrderForm>({
     name: new FormControl<string | null>(null),
@@ -32,7 +32,7 @@ export class ShoppingCartComponent implements OnInit {
   }
 
   setOrderDetail() {
-    for (const item of this.ShoppingCartService.data) {
+    for (const item of this.shoppingCartService.data) {
       const control = new FormGroup<IOrderDetailForm>({
         id: new FormControl<number>(item.id, { nonNullable: true }),
         product: new FormControl<Product>(item.product, { nonNullable: true }),
