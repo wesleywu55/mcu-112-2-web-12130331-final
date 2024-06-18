@@ -1,6 +1,6 @@
 import { CurrencyPipe } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
-import { FormArray, FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormArray, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { IOrderDetailForm } from '../interface/order-detail-form.interface';
 import { IOrderForm } from '../interface/order-form.interface';
 import { Product } from '../model/product';
@@ -17,11 +17,23 @@ export class ShoppingCartComponent implements OnInit {
   readonly shoppingCartService = inject(ShoppingCartService);
 
   readonly form = new FormGroup<IOrderForm>({
-    name: new FormControl<string | null>(null),
-    address: new FormControl<string | null>(null),
-    telephone: new FormControl<string | null>(null),
+    name: new FormControl<string | null>(null, { validators: [Validators.required] }),
+    address: new FormControl<string | null>(null, { validators: [Validators.required] }),
+    telephone: new FormControl<string | null>(null, { validators: [Validators.required] }),
     details: new FormArray<FormGroup<IOrderDetailForm>>([]),
   });
+
+  get name(): FormControl<string | undefined> {
+    return this.form.get('name') as FormControl<string | undefined>;
+  }
+
+  get address(): FormControl<string | undefined> {
+    return this.form.get('address') as FormControl<string | undefined>;
+  }
+
+  get telephone(): FormControl<string | undefined> {
+    return this.form.get('telephone') as FormControl<string | undefined>;
+  }
 
   get details(): FormArray<FormGroup<IOrderDetailForm>> {
     return this.form.get('details') as FormArray<FormGroup<IOrderDetailForm>>;
@@ -46,5 +58,8 @@ export class ShoppingCartComponent implements OnInit {
   onDelete(index: number, id: number | undefined): void {
     this.details.removeAt(index);
     this.shoppingCartService.deleteProduct(id!);
+  }
+  onSave(): void {
+    console.log('Save');
   }
 }
