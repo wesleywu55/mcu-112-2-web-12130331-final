@@ -43,5 +43,5 @@
   </section>
 </div>
 <div class="tool-bar">
-  <button [disabled]="form.invalid || details.length ===0" (click)="onSave()">送出訂單</button>
+  <button [disabled]="form.invalid || details.length ===0" (click)="onSave()">送出訂單({{ totalPrice | currency }})</button>
 </div>
