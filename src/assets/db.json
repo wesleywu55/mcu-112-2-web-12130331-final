@@ -127,5 +127,79 @@
       "price": 1580
     }
   ],
-  "order": []
+  "orders": [
+    {
+      "name": "吳冠緯",
+      "address": "台中市",
+      "telephone": "09",
+      "details": [
+        {
+          "id": 1,
+          "product": {
+            "id": 1,
+            "name": "A 產品",
+            "authors": [
+              "作者 A",
+              "作者 B",
+              "作者 C"
+            ],
+            "company": "博碩文化",
+            "isShow": true,
+            "hasDiscount": true,
+            "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+            "price": 1580
+          },
+          "count": 1,
+          "price": 1580
+        },
+        {
+          "id": 2,
+          "product": {
+            "id": 2,
+            "name": "B 產品",
+            "authors": [
+              "作者 A",
+              "作者 B",
+              "作者 C"
+            ],
+            "company": "博碩文化",
+            "isShow": true,
+            "hasDiscount": false,
+            "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+            "price": 1580
+          },
+          "count": 2,
+          "price": 3160
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "1",
+      "address": "1",
+      "telephone": "1",
+      "details": [
+        {
+          "id": 1,
+          "product": {
+            "id": 1,
+            "name": "A 產品",
+            "authors": [
+              "作者 A",
+              "作者 B",
+              "作者 C"
+            ],
+            "company": "博碩文化",
+            "isShow": true,
+            "hasDiscount": true,
+            "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+            "price": 1580
+          },
+          "count": 1,
+          "price": 1580
+        }
+      ],
+      "id": 3
+    }
+  ]
 }
